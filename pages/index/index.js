@@ -12,7 +12,10 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.navigateTo({
+    // wx.navigateTo({
+    //   url: '../logs/logs'
+    // })
+    wx.switchTab({
       url: '../logs/logs'
     })
   },
