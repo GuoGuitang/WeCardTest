@@ -1,0 +1,2 @@
+<import src="../template/tem1.wxml"/>
+<template is='msgItem' data='{{...item}}'></template>

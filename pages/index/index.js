@@ -1,14 +1,16 @@
 //index.js
 //获取应用实例
+import grace from "../../grace/index.js"
 const app = getApp()
 
-Page({
+grace.page({
   data: {
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    name: 'WeChat'
+    name: 'WeChat',
+    nameflag: false
   },
   //事件处理函数
   bindViewTap: function() {
@@ -56,8 +58,9 @@ Page({
     })
   },
   changeName: function(e){
-    this.setData({
-      name: 'MINA'
+    this.$http.get("https://localhost:3000/notes/2/3").then((d)=>{
+      console.log(d.data);
+      this.$data.name=d.data;
     })
   }
 })
