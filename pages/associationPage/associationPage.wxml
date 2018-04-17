@@ -1,0 +1,91 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class='page'>
+  <view class='page__bd'>
+    <view class='weui-panel weui-panel_access'>
+      <image style='width: 100%;' mode='scaleToFill' src='../../image/Hantang.jpg'></image>
+    </view>
+    <view class='weui-panel weui-panel_access'>
+      <view class='page__title'>汉唐中医协会</view>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <view class='weui-panel weui-panel_access'>
+      <view class="weui-grids">
+        <block wx:for="[0]" wx:key="*this">
+          <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../image/plus.png" />
+            <view class="weui-grid__label">{{buttonName[index]}}</view>
+          </navigator>
+        </block>
+      </view>
+    </view>
+    <view class='weui-panel weui-panel_access'>
+      <view class="weui-panel__hd">活动列表</view>
+      <view class="weui-panel__bd">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{icon60}}" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">汉唐中医春季聚会</view>
+            <view class="weui-media-box__desc">汉唐中医春季聚会开始报名啦!</view>
+            <view class="weui-media-box__info">
+              <view class="weui-media-box__info__meta">汉唐中医管理员</view>
+              <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">2018-04-17</view>
+            </view>
+          </view>
+        </navigator>
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{icon60}}" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">中医经典读书会</view>
+            <view class="weui-media-box__desc">中医经典读书会报名啦!</view>
+            <view class="weui-media-box__info">
+              <view class="weui-media-box__info__meta">汉唐中医管理员</view>
+              <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">2018-04-17</view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="weui-panel__ft">
+        <view class="weui-cell weui-cell_access weui-cell_link">
+          <view class="weui-cell__bd">查看更多</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-panel">
+      <view class="weui-panel__hd">文章列表</view>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title weui-media-box__title_in-text">汉唐中医读书会交流心得(一)</view>
+          <view class="weui-media-box__desc">大家一同分享心得体会!</view>
+          <view class="weui-media-box__info">
+            <view class="weui-media-box__info__meta">汉唐中医管理员</view>
+            <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">2018-04-17</view>
+            <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">10人浏览</view>
+          </view>
+        </view>
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title weui-media-box__title_in-text">汉唐中医读书会交流心得(二)</view>
+          <view class="weui-media-box__desc">大家一同分享心得体会!</view>
+          <view class="weui-media-box__info">
+            <view class="weui-media-box__info__meta">汉唐中医管理员</view>
+            <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">2018-04-17</view>
+            <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">10人浏览</view>
+          </view>
+        </view>
+      </view>
+      <view class="weui-panel__ft">
+        <view class="weui-cell weui-cell_access weui-cell_link">
+          <view class="weui-cell__bd">查看更多</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <block wx:if="{{buttonFlag}}">
+    <button class="weui-btn association-add" bindtap='applyAssociation'>申请加入</button>
+  </block>
+</view>

@@ -58,7 +58,7 @@ grace.page({
     })
   },
   changeName: function(e){
-    this.$http.get("https://localhost:3000/notes/2/3").then((d)=>{
+    this.$http.get("https://localhost:3000/notes/").then((d)=>{
       console.log(d.data);
       this.$data.name=d.data;
     })

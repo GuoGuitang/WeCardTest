@@ -1,0 +1,99 @@
+<view class='page'>
+  <view class='page__bd'>
+    <view class='weui-panel weui-panel_access' style='margin-left:15px;margin-right:15px'>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_appmsg">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="../../image/icon64_appwx_logo.png" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">贵棠</view>
+            <view class="weui-media-box__desc">手机:15699511079</view>
+            <view class="weui-media-box__desc">Email:axiuguitang@gmail.com</view>
+            <view class="weui-media-box__desc">Wechat:axiu_Guo</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view style='margin:10px 15px 5px 15px'>工作经历</view>
+    <view class='weui-panel weui-panel_access' style='margin-left:15px;margin-right:15px'>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_appmsg">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="../../image/record.png" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">MatrixLead</view>
+            <view class="weui-media-box__desc">2015.12-至今</view>
+            <view class="weui-media-box__desc">软件工程师</view>
+          </view>
+        </view>
+        <view class="weui-media-box weui-media-box_appmsg">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="../../image/record.png" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">那片青杨科技有限公司</view>
+            <view class="weui-media-box__desc">2017.12-至今</view>
+            <view class="weui-media-box__desc">创始人</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view style='margin:10px 15px 5px 15px'>教育经历</view>
+    <view class='weui-panel weui-panel_access' style='margin-left:15px;margin-right:15px'>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_appmsg">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="../../image/record.png" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">同济大学</view>
+            <view class="weui-media-box__desc">2010.9-2014.6</view>
+            <view class="weui-media-box__desc">飞行器制造工程</view>
+          </view>
+        </view>
+        <view class="weui-media-box weui-media-box_appmsg">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="../../image/record.png" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">University Paris-Sud</view>
+            <view class="weui-media-box__desc">2016.9-2017.10</view>
+            <view class="weui-media-box__desc">Human Computer Interaction Design,Master</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view style='margin:10px 15px 5px 15px'>汉唐中医</view>
+    <view class='weui-panel weui-panel_access' style='margin-left:15px;margin-right:15px'>
+      <view class="weui-form-preview__bd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">从医时间</view>
+          <view class="weui-form-preview__value">4年</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">职业</view>
+          <view class="weui-form-preview__value">针灸师</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">最喜欢的医生</view>
+          <view class="weui-form-preview__value">倪海厦</view>
+        </view>
+      </view>
+    </view>
+    <view style='margin:10px 15px 5px 15px'>车友会</view>
+    <view class='weui-panel weui-panel_access' style='margin-left:15px;margin-right:15px'>
+      <view class="weui-form-preview__bd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">您的车龄</view>
+          <view class="weui-form-preview__value">4年</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">您的爱车</view>
+          <view class="weui-form-preview__value">Lavida</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

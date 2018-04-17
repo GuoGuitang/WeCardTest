@@ -1,2 +1,28 @@
-<import src="../template/tem1.wxml"/>
-<template is='msgItem' data='{{...item}}'></template>
+<!--<button bindtap="getRESTAPI">Test!</button>
+<view>{{namestr}}</view>
+<form bindsubmit="getRESTAPIADD">
+  <button formType="submit">Add</button>
+  <input placeholder="添加一个username" auto-focus name="input"></input>
+</form>
+<view>{{addtest}}</view>
+<form bindsubmit="getRESTAPIUPGRADE">
+  <button formType="submit">UPGRADE!</button>
+  <input placeholder="修改之前的username" auto-focus name="input"></input>
+  <input placeholder="修改之后的username" auto-focus name="input2"></input>
+  <view>{{upgradeFlag}}</view>
+</form>
+<form bindsubmit="getRESTAPIDELETE">
+  <button formType="submit">Delete!</button>
+  <input placeholder="想要删除的username" auto-focus name="input"></input>
+  <view>{{deleteFlag}}</view>
+</form>
+<button bindtap="getRESTAPIALL">Show ALL!</button>
+<view wx:for="{{liststr}}" wx:key="username">
+  <ul>username:{{item.username}}</ul>
+</view>
+<button bindtap="navigateToNewPage">点击打开网页!</button>
+<button bindtap="navigateToHTMLPage">点击打开解析网页!</button>-->
+<button bindtap="navigateToAssociationPage">点击进入协会详情页!</button>
+<button bindtap="navigateToInfoPage">点击进入个人信息页!</button>
+<button bindtap="navigateToAllBridgeCardPage">点击进入所有福利卡页!</button>
+

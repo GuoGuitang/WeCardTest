@@ -1,0 +1,8 @@
+/* pages/associationPage/associationPage.wxss */
+.association-add {
+  position: fixed;
+  color: white;
+  background-color: #1AADA9;
+  bottom: 0;
+  width: 100%;
+}
