@@ -1,26 +1,18 @@
-// pages/htmlpage/htmlpage.js
-var WxParse = require('../../wxParse/wxParse.js');
+// pages/financialItemsPage/financialItemsPage.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
-    let article = 
-    `<html>
-      <body>
-        <h1 style="color:red">这是一个标题</h1>
-        <p>这是一个段落。</p>
-      </body>
-    </html>`;
-    WxParse.wxParse('article', 'html', article, that, 5);
+  
   },
 
   /**

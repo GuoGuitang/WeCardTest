@@ -1,6 +1,6 @@
-<!--<button bindtap="getRESTAPI">Test!</button>
+<button bindtap="getRESTAPI">Test!</button>
 <view>{{namestr}}</view>
-<form bindsubmit="getRESTAPIADD">
+<!--<form bindsubmit="getRESTAPIADD">
   <button formType="submit">Add</button>
   <input placeholder="添加一个username" auto-focus name="input"></input>
 </form>
@@ -19,10 +19,14 @@
 <button bindtap="getRESTAPIALL">Show ALL!</button>
 <view wx:for="{{liststr}}" wx:key="username">
   <ul>username:{{item.username}}</ul>
-</view>
+</view>-->
 <button bindtap="navigateToNewPage">点击打开网页!</button>
-<button bindtap="navigateToHTMLPage">点击打开解析网页!</button>-->
 <button bindtap="navigateToAssociationPage">点击进入协会详情页!</button>
 <button bindtap="navigateToInfoPage">点击进入个人信息页!</button>
 <button bindtap="navigateToAllBridgeCardPage">点击进入所有福利卡页!</button>
+<button bindtap="navigateTofinancialStatisticsPage">点击进入财务统计页!</button>
+<button bindtap="navigateTofinancialItemsPage">点击进入财务明细页!</button>
+<button bindtap="navigateTographicMessagePage">点击进入图文消息页!</button>
+<button bindtap="navigateTorequestPaymentPage">点击进入付款页!</button>
+
 

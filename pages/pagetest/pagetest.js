@@ -8,7 +8,7 @@ grace.page({
     deleteFlag:'UnKnown'
   },
   getRESTAPI: function (e) {
-    this.$http.get("https://localhost:3000/").then((d) => {
+    this.$http.get("https://localhost:3000/users").then((d) => {
       console.log(d.data);
       this.$data.namestr = d.data;
     })
@@ -55,11 +55,6 @@ grace.page({
       url: '../newpage/newpage'
     })
   },
-  navigateToHTMLPage: function () {
-    wx.navigateTo({
-      url: '../htmlpage/htmlpage'
-    })
-  },
   navigateToAssociationPage: function(){
     wx.navigateTo({
       url: '../associationPage/associationPage'
@@ -75,6 +70,26 @@ grace.page({
       url: '../allBridgeCardPage/allBridgeCardPage'
     })
   },
+  navigateTofinancialStatisticsPage: function () {
+    wx.navigateTo({
+      url: '../financialStatisticsPage/financialStatisticsPage'
+    })
+  },
+  navigateTofinancialItemsPage: function () {
+    wx.navigateTo({
+      url: '../financialItemsPage/financialItemsPage'
+    })
+  }, 
+  navigateTographicMessagePage: function () {
+    wx.navigateTo({
+      url: '../graphicMessagePage/graphicMessagePage'
+    })
+  }, 
+  navigateTorequestPaymentPage: function () {
+    wx.navigateTo({
+      url: '../request-payment/request-payment'
+    })
+  }, 
   onShareAppMessage: function (options) {
     　　var that = this;
     　　// 设置菜单中的转发按钮触发转发事件时的转发内容

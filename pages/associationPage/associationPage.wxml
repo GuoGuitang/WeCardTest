@@ -5,7 +5,7 @@
       <image style='width: 100%;' mode='scaleToFill' src='../../image/Hantang.jpg'></image>
     </view>
     <view class='weui-panel weui-panel_access'>
-      <view class='page__title'>汉唐中医协会</view>
+      <view class='page__title'>{{title}}</view>
       <template is="wxParse" data="{{wxParseData:article.nodes}}" />
     </view>
     <view class='weui-panel weui-panel_access'>

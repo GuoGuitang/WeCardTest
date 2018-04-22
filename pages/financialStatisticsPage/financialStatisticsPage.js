@@ -1,25 +1,45 @@
-// pages/allBridgeCardPage/allBridgeCardPage.js
+// pages/financialStatisticsPage/financialStatisticsPage.js
+var wxCharts = require('../../utils/wxcharts-min.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    tabs: [
-      { title: '所有', content: '内容一' },
-      { title: '巴黎高科', content: '内容二' },
-      { title: '北京大学法国校友会', content: '内容三' },
-      { title: '汉唐中医', content: '内容四' },
-      { title: '选项五', content: '内容五' },
-      { title: '选项六', content: '内容六' }
-    ]  
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    new wxCharts({
+      canvasId: 'lineCanvas',
+      type: 'line',
+      categories: ['2012', '2013', '2014', '2015', '2016', '2017'],
+      series: [{
+        name: '会费总收入',
+        data: [0.15, 0.2, 0.45, 0.37, 0.4, 0.8],
+        format: function (val) {
+          return val.toFixed(2) + '万';
+        }
+      }, {
+        name: '活动总收入',
+        data: [0.30, 0.37, 0.65, 0.78, 0.69, 0.94],
+        format: function (val) {
+          return val.toFixed(2) + '万';
+        }
+      }],
+      yAxis: {
+        title: '金额 (万元)',
+        format: function (val) {
+          return val.toFixed(2);
+        },
+        min: 0
+      },
+      width: 320,
+      height: 200
+    });
   },
 
   /**
@@ -69,8 +89,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  onClick: function (e) {
-    console.log(`ComponentId:${e.detail.componentId},you selected:${e.detail.key}`);
   }
 })
